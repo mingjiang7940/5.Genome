@@ -1,0 +1,7 @@
+#批量下载
+ascp.exe -i "C:\Program Files\IBM\Aspera Connect\etc\asperaweb_id_dsa.openssh" -l 3000M -T -P 33001 -k1 --mode recv --host fasp.sra.ebi.ac.uk --user era-fasp --file-list "D:/0.download/SRA/file.txt" "D:/0.download/SRA/WES_scWGS"
+
+
+#单个文件下载
+ascp.exe -i "C:\Program Files\IBM\Aspera Connect\etc\asperaweb_id_dsa.openssh" -l 3000M -T -P 33001 -k1 era-fasp@fasp.sra.ebi.ac.uk:/vol1/fastq/SRR503/001/SRR5038391 "D:/0.download/SRA/WES_scWGS"
+
